@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+
+# Env files — block all .env files except .example templates
+.env
+.env.*
+!.env*.example
+contracts/.env
+contracts/.env.*
+!contracts/.env.example
+
+# Hardhat build artifacts
+contracts/cache/
+contracts/artifacts/
+contracts/typechain-types/
+contracts/node_modules/
+
+# TypeScript incremental cache
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 98%;
+    --primary: 263 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 64%;
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 263 70% 70%;
+    --radius: 0.5rem;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+/* CTA button */
+.cta-btn {
+  padding: 14px 40px;
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 2px;
+  background: transparent;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-family: var(--font-space-grotesk), sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease, text-shadow 0.35s ease;
+}
+
+.cta-btn:hover {
+  border-color: rgba(0, 255, 255, 0.85);
+  color: #00FFFF;
+  box-shadow: 0 0 24px rgba(0, 255, 255, 0.28), 0 0 48px rgba(0, 255, 255, 0.10);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.55);
+}
+
+/* Agent card base */
+.agent-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+
+.agent-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.12);
+}
